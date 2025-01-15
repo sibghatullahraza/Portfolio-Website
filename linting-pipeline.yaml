@@ -1,0 +1,26 @@
+name: Linting Pipeline
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          npm install -g htmlhint stylelint
+
+      - name: Run HTMLHint
+        run: htmlhint src/**/*.html
+
+      - name: Run Stylelint
+        run: stylelint "styles/**/*.css"
