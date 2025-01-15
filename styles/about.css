@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+  }
+  
