@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  header {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
